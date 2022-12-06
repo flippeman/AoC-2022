@@ -34,13 +34,8 @@ input[1].forEach(instruction => {
 
 // actually doing the thingy
 procedure.forEach(step => {
-    //console.log(step);
-    //console.log(stacks);
-    //console.log(stacks[0].splice(-step[0], step[0]));
     var crateMover9001Chunk = stacks[step[1]].splice(-step[0], step[0]);
-    //console.log(crateMover9001Chunk);
     stacks[step[2]].push(...crateMover9001Chunk);
-    //stacks[step[2]].push(stacks[step[1]].pop());
 })
 
 var finalCode = "";
